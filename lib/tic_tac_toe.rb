@@ -93,6 +93,8 @@ end
 
 
 def play(board)
+  puts "Welcome to Tic Tac Toe!"
+  display_board(board)
   while !over?(board)
     turn(board)
   end
