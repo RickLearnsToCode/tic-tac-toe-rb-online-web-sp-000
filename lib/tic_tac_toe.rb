@@ -89,3 +89,12 @@ end
 def winner(board)
   won?(board) ? board[won?(board)[0]] : nil
 end
+
+
+
+def play(board)
+  while !over?(board)
+    turn(board)
+  end
+  won?(board) ? puts "Congratulations player #{winner(board)}!" : puts "Cats Game!"
+end
