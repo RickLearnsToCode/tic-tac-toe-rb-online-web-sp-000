@@ -9,7 +9,6 @@ def play(board)
     turn(board)
   end
   won?(board) ? puts "Congratulations player #{winner(board)}!" : puts "Cats Game!"
-
 end
 
 
