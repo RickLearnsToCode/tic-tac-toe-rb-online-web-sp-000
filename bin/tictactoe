@@ -2,17 +2,11 @@
 
 require_relative '../lib/tic_tac_toe'
 
+
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 
-def play(board)
-  while !over?(board)
-    turn(board)
-  end
-  won?(board) ? puts "Congratulations player #{winner(board)}!" : puts "Cats Game!"
-end
 
 
-puts "Welcome to Tic Tac Toe!"
-display_board(board)
+
 
 play(board)
