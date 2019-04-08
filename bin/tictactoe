@@ -5,7 +5,11 @@ require_relative '../lib/tic_tac_toe'
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 
 def play(board)
-  input = gets
+  while !over?(board)
+    turn(board)
+  end
+  won?(board) ? puts "Congratulations player #{winner(board)}!" : puts "Cats Game!"
+  
 end
 
 
